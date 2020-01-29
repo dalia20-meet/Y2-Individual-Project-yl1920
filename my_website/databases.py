@@ -13,24 +13,28 @@ session = scoped_session(sessionmaker(bind=engine,autoflush=False))
 
 
 
-
+def add_user(email,password):
+	session = createSession()
+	user = User(email=email, password=password)
+	session.add(user)
+	session.commit()
 
 
 
 
  
-def save_to_database(e,p):
+def save_to_database(email,password):
 	user = User(
-		email=e,
-		password=p)
+		email=email,
+		password=password)
 	session.add(user)
 	session.commit()
 
 def queryAllUsers():
 	return session.query(User).all()
 
-def check(e,p):
-	user=session.query(User).filter_by(email=e).first()
+def check(email,password):
+	user=session.query(User).filter_by(email=email).first()
 	if user != None:
 		if user.password == p :
 			c = True

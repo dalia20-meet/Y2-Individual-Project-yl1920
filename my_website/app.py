@@ -57,20 +57,20 @@ def logged_in():
 
 
 @app.route("/home")
-def home():
-    return render_template("homepage.html")
+def home():return render_template("homepage.html")
 
 @app.route("/abitur")
 def streams():
-    return render_template("streams.html")
+ 
+   return render_template("streams.html")
 
 @app.route("/lessons")
 def lessons():
     return render_template("lessons.html")
 
-@app.route("/tips")
-def tips():
-    return render_template("tips.html")
+# @app.route("/tips")
+# def tips():
+#     return render_template("tips.html")
 
 
 
