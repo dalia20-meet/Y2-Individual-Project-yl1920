@@ -1,0 +1,46 @@
+#more {display: none;}
+/*#more1 {display: none;}
+#more3{display: none;}*/
+body{
+	background-color:#FFF9ED ;
+	font-style: italic;
+    font-family: cursive;
+}
+
+
+ul {
+   
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  
+
+}
+
+li a:hover:not(.active) {
+  background-color:#8C4D4D;
+}
+
+.active {
+  background-color:#8C4D4D ;
+  color:black ;
+}

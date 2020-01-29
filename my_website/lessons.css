@@ -1,0 +1,44 @@
+#more {display: none;}
+/*#mehr {display: none;}*/
+body{
+	background-color:black ;
+	font-style: italic;
+    font-family: cursive;
+}
+
+
+ul {
+  background-color: #FFF9ED ;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 50px 50px;
+  text-decoration: none;
+  
+
+}
+
+li a:hover:not(.active) {
+  background-color:#8C4D4D;
+}
+
+.active {
+  background-color:#8C4D4D ;
+  color:black ;
+}
