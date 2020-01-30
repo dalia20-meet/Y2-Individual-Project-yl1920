@@ -26,7 +26,7 @@
   <div class="mySlides fade">
     <div class="numbertext">2 / 3</div>
     <img src="../static/image2.jpg" style="width:100%">
-    <div class="text">Wir moechten die ausländer studenten, die Abitur schreiben werden,zu helfen.</div>
+    <div class="text">Wir moechten die ausländer studenten, die Abitur schreiben werden, helfen.</div>
   </div>
 
 
@@ -74,12 +74,10 @@ function showSlides(n) {
 }
 </script> 
 <ul>
-  <li><a class="active" href={{ url_for ('home')}}>Home</a></li>
-    <li><a href={{ url_for('streams') }}>Abitur</a></li>
-    <!---<li><a href="#subjects">subjects</a></li>-->
-    <li><a href={{ url_for('lessons') }}>lessons</a></li>
-    <!-- <li><a href={{ url_for('tips')}}>Tips</a></li> -->
-    <!-- <li><a href="#exercises">exercises</a></li> -->
+  <li><a class="active" href="{{ url_for ('home')}}">Home</a></li>
+    <li><a href="{{ url_for('streams') }}">Abitur</a></li>
+    <li><a href="{{ url_for('lessons') }}">lessons</a></li>
+
 
 
 </ul>

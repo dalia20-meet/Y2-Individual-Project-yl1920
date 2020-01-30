@@ -53,11 +53,13 @@ def login():
 
 @app.route('/logged-in')
 def logged_in():
-    return render_template('homepage.html')
+    return render_template("homepage.html")
 
 
 @app.route("/home")
-def home():return render_template("homepage.html")
+def home():
+
+	return render_template("homepage.html")
 
 @app.route("/abitur")
 def streams():
@@ -68,9 +70,6 @@ def streams():
 def lessons():
     return render_template("lessons.html")
 
-# @app.route("/tips")
-# def tips():
-#     return render_template("tips.html")
 
 
 

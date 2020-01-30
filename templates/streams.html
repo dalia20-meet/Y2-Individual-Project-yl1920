@@ -6,10 +6,18 @@
 </head>
 <body>
   
+<ul>
+
+   <li><a href="{{ url_for ('home')}}">Home</a></li>
+   <li><a class="active" href="{{ url_for('streams') }}">Abitur</a></li>
+   <li><a href="{{ url_for('lessons') }}">lessons</a></li>
+ 
+
+</ul>
+    
   
-  <h1>ABITUR</h1>
   
-  <h3>The Abitur is a national set of exams for German students who are leaving secondary school for university. These exams usually take place in May and mark the end of school for students</h3>
+
   <!--<button onclick="window.location.href = 'https://w3docs.com';">Click Here</button>
   
     <h2>SAT</h2>
@@ -31,7 +39,7 @@
   </a>
 
     <button onclick="window.location.href = 'https://w3docs.com';">click here</button> -->
-  <h1>Subjects:</h1>
+  <h1> Die Fächern:</h1>
   
   <div class="row">
       <div class="column">
@@ -88,17 +96,7 @@
 
   
 <!--navbar--> 
-<ul>
-  <li><a  href="/home">Home</a></li>
-    <li><a class="active" href="/abitur">Abitur</a></li>
-    <!---<li><a href="#subjects">subjects</a></li>-->
-    <li><a href="/lessons">lessons</a></li>
-<!--     <li><a href="/tips">Tips</a></li>
-    <li><a href="#exercises">Exercises</a></li> -->
 
-
-</ul>
-  
 
 
 </body>
